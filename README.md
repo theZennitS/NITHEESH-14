@@ -17,19 +17,88 @@
   </tr>
 </table>
 
-## ~Skills
+## ~Tech Stack
+
+<table align="center">
+  <tr>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="48" height="48" alt="HTML5" />
+      <br/>HTML5
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
+      <br/>JavaScript
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" height="48" alt="React" />
+      <br/>React
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" width="48" height="48" alt="Next.js" />
+      <br/>Next.js
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" width="48" height="48" alt="Tailwind CSS" />
+      <br/>Tailwind
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node.js" />
+      <br/>Node.js
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" />
+      <br/>Python
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="48" height="48" alt="Java" />
+      <br/>Java
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="48" height="48" alt="MongoDB" />
+      <br/>MongoDB
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="48" height="48" alt="PostgreSQL" />
+      <br/>PostgreSQL
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="48" height="48" alt="Redis" />
+      <br/>Redis
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg" width="48" height="48" alt="Firebase" />
+      <br/>Firebase
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" width="48" height="48" alt="Nginx" />
+      <br/>Nginx
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg" width="48" height="48" alt="GraphQL" />
+      <br/>GraphQL
+    </td>
+    <td align="center" width="98">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" height="48" alt="Git" />
+      <br/>Git
+    </td>
+    <td align="center" width="98">
+      <img src="assests/three_dots.svg" width="48" height="48" alt="More" />
+      <br/>&nbsp;
+    </td>
+  </tr>
+</table>
+
+## ~Concepts
 
 <table>
   <tr>
     <td valign="top">
       <ul>
-        <li><b>Languages:</b> Python, Java, JavaScript</li>
-        <li><b>Backend & System Design:</b> Node.js, REST APIs, Microservices Architecture, Nginx, API Gateway, Service Decomposition</li>
-        <li><b>Databases:</b> MongoDB, PostgreSQL, Firebase, Redis</li>
-        <li><b>Web & Frontend:</b> React, Next.js, Tailwind CSS, HTML5</li>
-        <li><b>Data & AI:</b> Qdrant, Memo, GraphQL API Integration, Model Context Protocol (MCP)</li>
+        <li><b>Backend & System Design:</b> REST APIs, Microservices Architecture, API Gateway, Service Decomposition</li>
+        <li><b>Data & AI:</b> Qdrant, Memo, Model Context Protocol (MCP)</li>
         <li><b>Core CS:</b> Data Structures & Algorithms, OOP, Machine Learning, System Design, <a href="https://leetcode.com/u/_NITHEESH/">LeetCode</a></li>
-        <li><b>Tools:</b> Git, GitHub, VS Code, and AI tools</li>
         <li><b>Resume:</b> <a href="./NITS.RESUME.docx">Download My Resume</a></li>
       </ul>
     </td>
@@ -38,6 +107,8 @@
     </td>
   </tr>
 </table>
+
+---
 
 <h3 align="center"><i>"If it's not good, call it version 1.0"</i></h3>
 
@@ -100,6 +171,37 @@
 </table>
 
 
+<h2 align="left">~ GitHub Stats</h2>
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <picture>
+        <source srcset="https://github-readme-stats.vercel.app/api?username=NITHEESH-14&rank_icon=github&theme=dracula&text_bold=false&hide_border=true&bg_color=00000000&show_icons=true&hide=issues,contribs&count_private=true&include_all_commits=true" media="(prefers-color-scheme: dark)" />
+        <source srcset="https://github-readme-stats.vercel.app/api?username=NITHEESH-14&rank_icon=github&theme=buefy&show_icons=true&hide_border=true&text_bold=false&hide=issues,contribs&count_private=true&include_all_commits=true&bg_color=00000000" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+        <img src="https://github-readme-stats.vercel.app/api?username=NITHEESH-14&rank_icon=github&theme=dracula&show_icons=true&hide_border=true&text_bold=false&hide=issues,contribs&count_private=true&include_all_commits=true&bg_color=00000000" alt="Stats" />
+      </picture>
+    </td>
+    <td align="center" width="50%">
+      <picture>
+        <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=NITHEESH-14&layout=compact&theme=dracula&text_bold=false&hide_border=true&bg_color=00000000" media="(prefers-color-scheme: dark)" />
+        <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=NITHEESH-14&layout=compact&theme=buefy&text_bold=false&hide_border=true&bg_color=00000000" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NITHEESH-14&layout=compact&theme=dracula&text_bold=false&hide_border=true&bg_color=00000000" alt="Top Langs" />
+      </picture>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <picture>
+        <source srcset="https://github-readme-streak-stats-eight.vercel.app?user=NITHEESH-14&date_format=j%20M%5B%20Y%5D&theme=dracula&border_radius=0&background=FFFFFF00&hide_border=true" media="(prefers-color-scheme: dark)" />
+        <source srcset="https://github-readme-streak-stats-eight.vercel.app?user=NITHEESH-14&date_format=j%20M%5B%20Y%5D&theme=buefy&border_radius=0&background=FFFFFF00&hide_border=true" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+        <img src="https://github-readme-streak-stats-eight.vercel.app/?user=NITHEESH-14&date_format=j%20M%5B%20Y%5D&theme=dracula&border_radius=0&background=FFFFFF00&hide_border=true" alt="Contributions" />
+      </picture>
+    </td>
+  </tr>
+</table>
+
+
 ## ~Connect with me
 
 <table>
@@ -114,3 +216,4 @@
 </table>
 
 ![Crazy GIF](assests/gifs/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)
+
