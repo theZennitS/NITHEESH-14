@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -38,7 +40,8 @@ jobs:
           # Only commit and push if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "chore: automatically update profile stats SVGs"
-            git push
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes in stats SVGs."
           fi
