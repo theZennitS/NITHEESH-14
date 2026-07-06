@@ -7,3 +7,9 @@ __pycache__/
 .venv/
 venv/
 ~$*.docx
+
+# Vercel local app
+vercel-app/
+
+# Old README
+README_OLD.md

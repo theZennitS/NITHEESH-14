@@ -81,7 +81,7 @@ def main():
     last_updated_time = datetime.now(timezone.utc).strftime("%b %d, %Y %I:%M %p UTC")
 
     # 1. Fetch Main Stats SVG
-    url_stats = f"https://github-readme-stats.vercel.app/api?username={username}&rank_icon=github&theme=dracula&text_bold=false&hide_border=true&bg_color=00000000&show_icons=true&hide=issues&count_private=true"
+    url_stats = f"https://github-stats-extended.vercel.app/api?username={username}&rank_icon=github&theme=dracula&text_bold=false&hide_border=true&bg_color=00000000&show_icons=true&hide=issues&count_private=true"
     stats_svg = fetch_content(url_stats)
 
     # 2. Fetch Streak Stats SVG
@@ -135,6 +135,19 @@ def main():
 
     with open(profileviews_path, "rb") as image_file:
         encoded_profileviews = base64.b64encode(image_file.read()).decode('utf-8')
+
+    font_regular_path = os.path.join(repo_root, "assests", "fonts", "MinecraftRegular-Bmg3.otf")
+    font_bold_path = os.path.join(repo_root, "assests", "fonts", "MinecraftBold-nMK1.otf")
+
+    encoded_font_regular = ""
+    if os.path.exists(font_regular_path):
+        with open(font_regular_path, "rb") as image_file:
+            encoded_font_regular = base64.b64encode(image_file.read()).decode('utf-8')
+
+    encoded_font_bold = ""
+    if os.path.exists(font_bold_path):
+        with open(font_bold_path, "rb") as image_file:
+            encoded_font_bold = base64.b64encode(image_file.read()).decode('utf-8')
 
     # Clean the streak SVG background rect to make it transparent
     streak_svg = streak_svg.replace("<rect width='495' height='195' rx='0'/>", "<rect width='495' height='195' rx='0' fill='none'/>")
@@ -325,6 +338,21 @@ def main():
   </defs>
 
   <style>
+    @font-face {{
+      font-family: 'Minecraft';
+      src: url('data:font/opentype;charset=utf-8;base64,{encoded_font_regular}') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }}
+    @font-face {{
+      font-family: 'Minecraft';
+      src: url('data:font/opentype;charset=utf-8;base64,{encoded_font_bold}') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+    }}
+    .header, .stat, .rank-text, text {{
+      font-family: 'Minecraft', monospace !important;
+    }}
     .glass-card-left {{
       fill: url(#liquidGlassBg);
       stroke: #004498;
