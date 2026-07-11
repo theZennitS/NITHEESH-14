@@ -2,6 +2,7 @@ import urllib.request
 import re
 import base64
 import os
+import json
 from datetime import datetime, timezone
 
 def fetch_content(url, headers=None):
@@ -59,6 +60,64 @@ def get_pixel_path(x, y, w, h, p=3):
         f"V {y+p} H {x+2*p} "
         f"V {y} H {x+3*p} Z"
     )
+
+def fetch_private_repo_count():
+    token = os.environ.get("PRIVATE_REPO_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if not token:
+        print("No GITHUB_TOKEN or PRIVATE_REPO_TOKEN found in environment. Skipping private repo count fetch.")
+        return None
+    
+    count = 0
+    page = 1
+    while True:
+        url = f"https://api.github.com/user/repos?visibility=private&affiliation=owner&per_page=100&page={page}"
+        req = urllib.request.Request(url, headers={
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github.v3+json",
+            "User-Agent": "Mozilla/5.0"
+        })
+        try:
+            with urllib.request.urlopen(req, timeout=5) as response:
+                data = json.loads(response.read().decode("utf-8"))
+                if isinstance(data, list):
+                    if not data:
+                        break
+                    count += len(data)
+                    if len(data) < 100:
+                        break
+                    page += 1
+                else:
+                    print(f"Unexpected response format from repos API: {type(data)}")
+                    return None
+        except Exception as e:
+            print(f"Error fetching private repo count from GitHub API: {e}")
+            return None
+            
+    print(f"Fetched private repo count: {count}")
+    return count
+
+def update_readme_private_repos(count, repo_root):
+    if count is None:
+        return
+    
+    readme_path = os.path.join(repo_root, "README.md")
+    if not os.path.exists(readme_path):
+        print(f"README.md not found at {readme_path}")
+        return
+        
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+        
+    pattern = r"(<!--\s*PRIVATE_REPOS_COUNT\s*-->).*?(<!--\s*/PRIVATE_REPOS_COUNT\s*-->)"
+    replacement = r"\g<1>" + str(count) + r"\g<2>"
+    
+    new_content, num_subs = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    if num_subs > 0:
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"Successfully updated README.md with private repo count: {count}!")
+    else:
+        print("Could not find PRIVATE_REPOS_COUNT placeholder in README.md.")
 
 def main():
     username = "NITHEESH-14"
@@ -469,6 +528,11 @@ def main():
     with open(output_path_counter, "w", encoding="utf-8") as f:
         f.write(svg_counter)
     print(f"Successfully compiled SVG banner with counter to {output_path_counter}!")
+
+    # Fetch and update private repository count in README.md
+    private_count = fetch_private_repo_count()
+    if private_count is not None:
+        update_readme_private_repos(private_count, repo_root)
 
 if __name__ == "__main__":
     main()
