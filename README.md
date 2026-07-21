@@ -123,7 +123,7 @@
     <td width="50%" valign="top">
       <div style="border: 1px solid #30363d; border-radius: 6px; padding: 16px; background: #0d1117; min-height: 120px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;">
         <div style="display: flex; align-items: center; margin-bottom: 12px;">
-          <a href="https://github.com/NITHEESH-14/GRepcue"><img src="https://img.shields.io/badge/GRepcue-%23181717?style=flat-square&logo=github&logoColor=white" alt="GRepcue" /></a>
+          <a href="https://github.com/theZennitS/GRepcue"><img src="https://img.shields.io/badge/GRepcue-%23181717?style=flat-square&logo=github&logoColor=white" alt="GRepcue" /></a>
         </div>
         <p style="color: #8b949e; font-size: 12px; line-height: 1.5; margin: 0;">
           GitHub Repository Discovery CLI & MCP Server. Splits natural language queries into parallel searches and ranks results.
@@ -133,7 +133,7 @@
     <td width="50%" valign="top">
       <div style="border: 1px solid #30363d; border-radius: 6px; padding: 16px; background: #0d1117; min-height: 120px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;">
         <div style="display: flex; align-items: center; margin-bottom: 12px;">
-          <a href="https://github.com/NITHEESH-14/Coral"><img src="https://img.shields.io/badge/Coral-%23181717?style=flat-square&logo=github&logoColor=white" alt="Coral" /></a>
+          <a href="https://github.com/theZennitS/Coral"><img src="https://img.shields.io/badge/Coral-%23181717?style=flat-square&logo=github&logoColor=white" alt="Coral" /></a>
         </div>
         <p style="color: #8b949e; font-size: 12px; line-height: 1.5; margin: 0;">
           Locally-running agentic AI desktop assistant executing 45+ natural language commands with multi-LLM routing and OCR.
@@ -159,7 +159,7 @@
     <td width="50%" valign="top">
       <div style="border: 1px solid #30363d; border-radius: 6px; padding: 16px; background: #0d1117; min-height: 120px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;">
         <div style="display: flex; align-items: center; margin-bottom: 12px;">
-          <a href="https://github.com/NITHEESH-14/CrisisSync"><img src="https://img.shields.io/badge/CrisisSync-%23181717?style=flat-square&logo=github&logoColor=white" alt="CrisisSync" /></a>
+          <a href="https://github.com/theZennitS/CrisisSync"><img src="https://img.shields.io/badge/CrisisSync-%23181717?style=flat-square&logo=github&logoColor=white" alt="CrisisSync" /></a>
         </div>
         <p style="color: #8b949e; font-size: 12px; line-height: 1.5; margin: 0;">
           A collaborative crisis management and emergency response platform designed to coordinate resources and streamline communication in real-time.
@@ -174,7 +174,7 @@
 
 <div align="center">
   <img src="assests/images/stats_banner_with_counter.svg" width="100%" />
-  <img src="https://komarev.com/ghpvc/?username=NITHEESH-14&style=flat-square&color=blue&label=Profile+Views" alt="github" width="0" height="0" />
+  <img src="https://komarev.com/ghpvc/?username=theZennitS&style=flat-square&color=blue&label=Profile+Views" alt="github" width="0" height="0" />
 </div>
 
 

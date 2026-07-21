@@ -120,7 +120,7 @@ def update_readme_private_repos(count, repo_root):
         print("Could not find PRIVATE_REPOS_COUNT placeholder in README.md.")
 
 def main():
-    username = "NITHEESH-14"
+    username = "theZennitS"
     streak_y = 65
     left_pixel_path = get_pixel_path(15, 20, 327, 144, p=3)
     right_pixel_path = get_pixel_path(492, streak_y, 347, 144, p=3)
